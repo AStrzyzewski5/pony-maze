@@ -1,3 +1,37 @@
-<p>
-  start-page works!
-</p>
+<div class="field">
+  <label class="label">Pony</label>
+  <div class="control">
+    <div class="select">
+      <select [(ngModel)]="pony">
+        <option>Twilight Sparkle</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Height</label>
+  <div class="control">
+    <input [(ngModel)]="height" class="input" type="text" required>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Width</label>
+  <div class="control">
+    <input [(ngModel)]="width" class="input" type="text" required>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Difficulty</label>
+  <div class="control">
+    <input [(ngModel)]="difficulty" class="input" type="text" required>
+  </div>
+</div>
+
+<div class="field is-grouped">
+  <div class="control">
+    <button (click)="startGame()" class="button is-link">Start</button>
+  </div>
+</div>
